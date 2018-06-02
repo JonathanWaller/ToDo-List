@@ -17,10 +17,10 @@ class App extends Component {
   }
 
   handleClick(userInput) {
-    let listCopy = this.state.list.slice();
-    listCopy.push(this.state.userInput);
+    let newList = this.state.list.slice();
+    newList.push(this.state.userInput);
     this.setState({
-      list: listCopy
+      list: newList
     });
   }
 
